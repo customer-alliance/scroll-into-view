@@ -12,7 +12,7 @@
   },
   "scripts": {
     "test": "browserify ./test/test.js | tape-run",
-    "build": "browserify ./example/index.js > ./example/index.browser.js & browserify --bare -g uglifyify ./standalone.js > ./scrollIntoView.min.js",
+    "build": "browserify ./example/index.js > ./example/index.browser.js & browserify --bare -g uglifyify -t babelify ./standalone.js > ./scrollIntoView.min.js",
     "watchTest": "watchify ./test/test.js -d -o ./test/test.browser.js",
     "watchExample": "watchify ./example/index.js -d -o ./example/index.browser.js",
     "prepublish": "npm run-script build",
@@ -24,6 +24,9 @@
   "author": "",
   "license": "MIT",
   "devDependencies": {
+    "@babel/core": "^7.14.6",
+    "@babel/preset-env": "^7.14.7",
+    "babelify": "^10.0.0",
     "browserify": "^14.4.0",
     "chlogit": "^1.0.2",
     "crel": "^1.1.1",
