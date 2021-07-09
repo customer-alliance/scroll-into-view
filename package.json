@@ -2,7 +2,7 @@
   "name": "scroll-into-view",
   "version": "1.16.0",
   "description": "scrolls an elements into view, recursively aligning parents.",
-  "main": "scrollIntoView.js",
+  "main": "scrollIntoView.min.js",
   "directories": {
     "test": "test"
   },
