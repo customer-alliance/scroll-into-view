@@ -38,7 +38,8 @@
     "watchify": "^3.9.0"
   },
   "files": [
-    "*.js"
+    "*.js",
+    "babel.config.json"
   ],
   "dependencies": {},
   "collective": {
